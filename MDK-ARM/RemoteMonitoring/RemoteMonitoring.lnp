@@ -1,0 +1,28 @@
+--cpu Cortex-M0
+"remotemonitoring\startup_stm32f030x6.o"
+"remotemonitoring\main.o"
+"remotemonitoring\stm32f0xx_it.o"
+"remotemonitoring\stm32f0xx_hal_msp.o"
+"remotemonitoring\stm32f0xx_hal_adc.o"
+"remotemonitoring\stm32f0xx_hal_adc_ex.o"
+"remotemonitoring\stm32f0xx_hal_tim.o"
+"remotemonitoring\stm32f0xx_hal_tim_ex.o"
+"remotemonitoring\stm32f0xx_hal_uart.o"
+"remotemonitoring\stm32f0xx_hal_uart_ex.o"
+"remotemonitoring\stm32f0xx_hal_rcc.o"
+"remotemonitoring\stm32f0xx_hal_rcc_ex.o"
+"remotemonitoring\stm32f0xx_hal.o"
+"remotemonitoring\stm32f0xx_hal_i2c.o"
+"remotemonitoring\stm32f0xx_hal_i2c_ex.o"
+"remotemonitoring\stm32f0xx_hal_gpio.o"
+"remotemonitoring\stm32f0xx_hal_dma.o"
+"remotemonitoring\stm32f0xx_hal_cortex.o"
+"remotemonitoring\stm32f0xx_hal_pwr.o"
+"remotemonitoring\stm32f0xx_hal_pwr_ex.o"
+"remotemonitoring\stm32f0xx_hal_flash.o"
+"remotemonitoring\stm32f0xx_hal_flash_ex.o"
+"remotemonitoring\system_stm32f0xx.o"
+--library_type=microlib --strict --scatter "RemoteMonitoring\RemoteMonitoring.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "RemoteMonitoring.map" -o RemoteMonitoring\RemoteMonitoring.axf
